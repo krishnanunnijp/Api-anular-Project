@@ -1,0 +1,58 @@
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3 mt-4">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <table class="table">
+                        <tr>
+                            <th>Nation</th>
+                            <th>ID Year</th>
+                            <th>Year</th>
+                            <th>Population</th>
+                            <th>Slug Nation</th>
+                        </tr>
+                        <tr *ngFor="let i of data.data">
+                            <td>{{i.Nation}}</td>
+                            <td>{{i['ID Year']}}</td>
+                            <td>{{i.Year}}</td>
+                            <td>{{i.Population}}</td>
+                            <td>{{i['Slug Nation']}}</td>
+
+                        </tr>
+                    </table>
+                    <table class="table">
+                        <tr>
+                            <th>measures</th>
+                            <th>source name</th>
+                            <th>source description</th>
+                            <th>dataset name</th>
+                            <th>dataset link</th>
+                            <th>table id</th>
+                            <th>topic</th>
+                            <th>subtopic</th>
+                            <th>source name</th>
+
+                        </tr>
+                        <tr *ngFor="let i of data.source">
+                            <td>{{i.measures}}</td>
+                            <td>{{i.annotations.source_name}}</td>
+                            <td>{{i.annotations.source_description}}</td>
+                            <td>{{i.annotations.dataset_name}}</td>
+                            <td>{{i.annotations.dataset_link}}</td>
+                            <td>{{i.annotations.table_id}}</td>
+                            <td>{{i.annotations.topic}}</td>
+                            <td>{{i.annotations.subtopic}}</td>
+                            <td>{{i.name}}</td>
+
+
+
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+  </div>
