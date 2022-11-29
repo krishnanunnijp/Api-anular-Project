@@ -1,36 +1,39 @@
-
 <div class="container">
-    <div class="row">
+  <div class="row">
 
-        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12" >
-            
-            <div class="row g-3 mt-4">
-                <nav class="navbar navbar-expand-lg bg-success">
-                    <div class="container-fluid">
-                      <a class="navbar-brand" href="#">page{{data.page}}  per page:{{data.per_page}}</a>
-                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                      </button>
-                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
 
-                        </ul>
-                        <p class="d-flex">total:{{data.total}}  total pages{{data.total_pages}}</p>
+      <div class="row g-3 mt-4">
+        <nav class="navbar navbar-expand-lg bg-success">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">page{{data.page}} per page:{{data.per_page}}</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-                      </div>
-                    </div>
-                  </nav>
-                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-3" *ngFor="let i of data.data" >
-                    <div class="card mb-3" >
-                        <img src="{{i.avatar}}"  class="card-img-top" alt="...">
-                        <div   class="card-body">
-                            <h5 class="card-title">{{i.id}}</h5>
-                          <p class="card-text">{{i.first_name+" "+i.last_name}}</p>
-                          <p class="card-text">{{i.email}}</p>                          
+              </ul>
+              <p class="d-flex">total:{{data.total}} total pages{{data.total_pages}}</p>
 
-                        </div>
-                      </div>
-                      </div>
-                      </div>
-                      </div>
+            </div>
+          </div>
+        </nav>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-3" *ngFor="let i of data.data">
+          <div class="card mb-3">
+            <img src="{{i.avatar}}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{i.id}}</h5>
+              <p class="card-text">{{i.first_name+" "+i.last_name}}</p>
+              <p class="card-text">{{i.email}}</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
