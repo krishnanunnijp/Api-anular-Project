@@ -2,18 +2,17 @@ import { Component } from '@angular/core';
 import { ApiService } from '../api.service';
 
 @Component({
-  selector: 'app-todo-app',
-  templateUrl: './todo-app.component.html',
-  styleUrls: ['./todo-app.component.css']
+  selector: 'app-quotes-app',
+  templateUrl: './quotes-app.component.html',
+  styleUrls: ['./quotes-app.component.css']
 })
-export class TodoAppComponent {
+export class QuotesAppComponent {
 data:any={}
 constructor(private api:ApiService){
-  api.fetchTodo().subscribe(
+  api.fetchQuotes().subscribe(
     (readData)=>{
       this.data=readData
     }
   )
 }
-
 }
