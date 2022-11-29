@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PassengerViewComponent } from './passenger-view/passenger-view.component';
 import { UsViewComponent } from './us-view/us-view.component';
+import { UserViewComponent } from './user-view/user-view.component';
 
 const myRouter:Routes=[
   {
@@ -15,6 +16,10 @@ const myRouter:Routes=[
   {
     path:"usview",
     component: UsViewComponent
+  },
+  {
+    path:"userview",
+    component: UserViewComponent
   }
 ]
 
@@ -22,7 +27,8 @@ const myRouter:Routes=[
   declarations: [
     AppComponent,
     PassengerViewComponent,
-    UsViewComponent
+    UsViewComponent,
+    UserViewComponent
   ],
   imports: [
     BrowserModule,
