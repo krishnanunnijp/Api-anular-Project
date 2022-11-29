@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="row">
+  
+      <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+  
+        <div class="row g-3 mt-4">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-3" *ngFor="let i of data.users">
+            <div class="card mb-3">
+                <img src="{{i.image}}" class="card-img-top" alt="...">
+              <div class="card-body" style="height: 600px;">
+                <h5 class="card-title">{{i.id}}</h5>
+                <p class="card-text">Name: {{i.firstName+" "+i.lastName}}</p>
+                <p class="card-text">Maiden name: {{i.maidenName}}</p>
+                <p class="card-text">age: {{i.age}}</p>
+                <p class="card-text">gender: {{i.gender}}</p>
+                <p class="card-text">email: {{i.email}}</p>
+                <p class="card-text">phone: {{i.phone}}</p>
+                <p class="card-text">username: {{i.username}}</p>
+                <p class="card-text">bloodGroup:{{i.bloodGroup}}</p>
+                <p class="card-text">height:{{i.height}}</p>
+                <p class="card-text">weight:{{i.weight}}</p>
+                <p class="card-text">eyeColor:{{i.eyeColor}}</p>
+                <p class="card-text">hair color:{{i.hair.color}}</p>
+                <p class="card-text">hair type:{{i.hair.type}}</p>
+                <p class="card-text">domain:{{i.domain}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -8,7 +8,9 @@ import { PassengerViewComponent } from './passenger-view/passenger-view.componen
 import { UsViewComponent } from './us-view/us-view.component';
 import { UserViewComponent } from './user-view/user-view.component';
 import { ProductViewComponent } from './product-view/product-view.component';
-import {HttpClientModule} from '@angular/common/http'
+import {HttpClientModule} from '@angular/common/http';
+import { UsersViewComponent } from './users-view/users-view.component';
+import { TodoAppComponent } from './todo-app/todo-app.component'
 
 const myRouter:Routes=[
   {
@@ -26,6 +28,10 @@ const myRouter:Routes=[
   {
     path:"productview",
     component: ProductViewComponent
+  },
+  {
+    path:"users",
+    component: UsersViewComponent
   }
 ]
 
@@ -35,7 +41,9 @@ const myRouter:Routes=[
     PassengerViewComponent,
     UsViewComponent,
     UserViewComponent,
-    ProductViewComponent
+    ProductViewComponent,
+    UsersViewComponent,
+    TodoAppComponent
   ],
   imports: [
     BrowserModule,
