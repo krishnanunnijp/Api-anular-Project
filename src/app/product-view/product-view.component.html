@@ -1,0 +1,39 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3 mt-4">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3" *ngFor="let i of data.products" >
+                    <div class="card"  >
+                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active" *ngFor="let j of i.images">
+                                <img height="200px" src="{{j}}" class="d-block w-100" alt="...">
+                              </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                        <div style="height: 425px;" class="card-body">
+                          <h5 class="card-title">{{i.title}}</h5>
+                          <h5 class="card-title">brand:{{i.brand}}</h5>
+                          <p class="card-text">{{i.category}}</p>
+                          <p class="card-text">{{i.price}}</p>
+                          <p class="card-text">{{i.description}}</p>
+                          <p class="card-text">discount:{{i.discountPercentage}}</p>
+                          <p class="card-text">rating:{{i.rating}}</p>
+                          <p class="card-text">stock:{{i.stock}}</p>
+                              
+                          <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                      </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
