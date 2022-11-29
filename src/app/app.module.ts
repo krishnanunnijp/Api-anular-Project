@@ -10,7 +10,9 @@ import { UserViewComponent } from './user-view/user-view.component';
 import { ProductViewComponent } from './product-view/product-view.component';
 import {HttpClientModule} from '@angular/common/http';
 import { UsersViewComponent } from './users-view/users-view.component';
-import { TodoAppComponent } from './todo-app/todo-app.component'
+import { TodoAppComponent } from './todo-app/todo-app.component';
+import { QuotesAppComponent } from './quotes-app/quotes-app.component';
+import { ApiNavbarComponent } from './api-navbar/api-navbar.component'
 
 const myRouter:Routes=[
   {
@@ -32,6 +34,14 @@ const myRouter:Routes=[
   {
     path:"users",
     component: UsersViewComponent
+  },
+  {
+    path:"todo",
+    component: TodoAppComponent
+  },
+  {
+    path:"",
+    component: QuotesAppComponent
   }
 ]
 
@@ -43,7 +53,9 @@ const myRouter:Routes=[
     UserViewComponent,
     ProductViewComponent,
     UsersViewComponent,
-    TodoAppComponent
+    TodoAppComponent,
+    QuotesAppComponent,
+    ApiNavbarComponent
   ],
   imports: [
     BrowserModule,

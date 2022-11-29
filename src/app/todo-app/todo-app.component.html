@@ -1,1 +1,26 @@
-<p>todo-app works!</p>
+<app-api-navbar></app-api-navbar>
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3 mt-4">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <table class="table">
+                        <tr>
+                            <th>user</th>
+                            <th>id</th>
+                            <th>todo</th>
+                            <th>completed status</th>
+                        </tr>
+                        <tr *ngFor="let i of data.todos">
+                            <td>{{i.userId}}</td>
+                            <td>{{i.id}}</td>
+                            <td>{{i.todo}}</td>
+                            <td>{{i.completed}}</td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+  </div>
